@@ -1,0 +1,20 @@
+{
+  "name": "flex.css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:vace/flex.css.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build":"lessc src/index.less dist/flex.css && postcss -c compile.json -o dist/flex.css dist/flex.css",
+    "product":"lessc -x src/index.less dist/flex.min.css && postcss -c compile.json -o dist/flex.min.css dist/flex.min.css"
+  },
+  "author": "Vace <ocdo@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "less": "^2.7.2",
+    "less-plugin-clean-css": "^1.5.1"
+  }
+}

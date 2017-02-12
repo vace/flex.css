@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<!--author:Vace_Vlm(ocdo@qq.com),create:2017年2月12日 下午10:21-->
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-title" content="vace"/>
+    <meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../src/index.css">
+
+    <style>
+        *{padding: 0;margin: 0;}
+        .col-1,.c1{background-color: #f44336;}
+        .col-2,.c2{background-color: #e91e63;}
+        .col-3,.c3{background-color: #9c27b0;}
+        .col-4,.c4{background-color: #673ab7;}
+        .col-5,.c5{background-color: #3f51b5;}
+        .col-6{background-color: #2196f3;}
+        .col-7{background-color: #00bcd4;}
+        .col-8{background-color: #009688;}
+        .col-9{background-color: #8bc34a;}
+        .col-10{background-color: #ffc107;}
+        .col-11{background-color: #ff5722;}
+        .col-12{background-color: #ff9800;}
+        .demo .row{
+            height: 40px;background-color: #000;color:#fff;margin-bottom: 20px;
+        }
+        .demo .rows .row{
+            margin-bottom: 0;border-bottom: 1px solid #000;
+        }
+        .code-desc {
+            position: relative;background: #2196f3;margin: 7px;display: inline-block;padding: 10px;border-radius: 5px;font-size: 18px;font-weight: bold;color: #fff;
+        }
+        .code-desc:after {
+            top: 100%;
+            left: 8px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(136, 183, 213, 0);
+            border-top-color: #2196f3;
+            border-width: 12px;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+	<div class="demo">
+        <div class="code-desc">
+            auto responsive <code>.row</code>
+        </div>
+        <div class="row">
+            <div class="col c1">.row .col</div>
+            <div class="col c2">.row .col</div>
+            <div class="col c3">.row .col</div>
+        </div>
+
+        <div class="code-desc">
+            <code>.row.reverse</code>
+        </div>
+        <div class="row reverse">
+            <div class="col c1">.row .col 1</div>
+            <div class="col c2">.row .col 2</div>
+            <div class="col c3">.row .col 3</div>
+        </div>
+
+        
+        <div class="code-desc">
+            <code>.row.center</code>
+        </div>
+        <div class="row center">
+            <div class="col-2">.row.center .col-2</div>
+            <div class="col-3">.row.center .col-3</div>
+            <div class="col-4">.row.center .col-4</div>
+        </div>
+        
+        <div class="code-desc">
+            <code>.row.middle</code>
+        </div>
+        <div class="row middle">
+            <div class="col-2">.col-2</div>
+            <div class="col-3">.col-3</div>
+            <div class="col-4">.col-4</div>
+        </div>
+        
+        <div class="code-desc">
+            <code>.row.center.middle</code>
+        </div>
+        <div class="row center middle">
+            <div class="col-2">.col-2 lorem text</div>
+            <div class="col-3">.col-3</div>
+            <div class="col-4">.col-4</div>
+        </div>
+
+        <div class="code-desc">
+            <code>.row.end.middle</code>
+        </div>
+        <div class="row end middle">
+            <div class="col-2">.col-2 lorem text</div>
+            <div class="col-3">.col-3</div>
+            <div class="col-4">.col-4</div>
+        </div>
+
+        <div class="code-desc">
+            <code>.row.around.middle</code>
+        </div>
+        <div class="row around middle">
+            <div class="col-2">.col-2 lorem text</div>
+            <div class="col-3">.col-3</div>
+            <div class="col-4">.col-4</div>
+        </div>
+
+        <div class="code-desc">
+            <code>.row.between.middle</code>
+        </div>
+        <div class="row between middle">
+            <div class="col-2">.col-2 lorem text</div>
+            <div class="col-3">.col-3</div>
+            <div class="col-4">.col-4</div>
+        </div>
+
+        <div class="code-desc">
+            <code>.row.center.down</code>
+        </div>
+        <div class="row center down">
+            <div class="col-2">.col-2 lorem text</div>
+            <div class="col-3">.col-3</div>
+            <div class="col-4">.col-4</div>
+        </div>
+
+        <div class="code-desc">
+            <code>.row.center.stretch</code>
+        </div>
+        <div class="row center stretch">
+            <div class="col-2">.col-2 lorem text</div>
+            <div class="col-3">.col-3</div>
+            <div class="col-4">.col-4</div>
+        </div>
+
+        <div class="code-desc">
+            <code>.row.center.baseline</code>
+        </div>
+        <div class="row center baseline">
+            <div class="col-2">.col-2 lorem text</div>
+            <div class="col-3">.col-3</div>
+            <div class="col-4">.col-4</div>
+        </div>
+        
+        <div class="code-desc">
+            <code>.col-0 ~ .col-12</code>
+        </div>
+        <div class="rows">
+            <div class="row">
+                <div class="col-0">.col-0</div>
+            </div>
+            <div class="row">
+                <div class="col-1">.col-1</div>
+            </div>
+            <div class="row">
+                <div class="col-2">.col-2</div>
+            </div>
+            <div class="row">
+                <div class="col-3">.col-3</div>
+            </div>
+            <div class="row">
+                <div class="col-4">.col-4</div>
+            </div>
+            <div class="row">
+                <div class="col-5">.col-5</div>
+            </div>
+            <div class="row">
+                <div class="col-6">.col-6</div>
+            </div>
+            <div class="row">
+                <div class="col-7">.col-7</div>
+            </div>
+            <div class="row">
+                <div class="col-8">.col-8</div>
+            </div>
+            <div class="row">
+                <div class="col-9">.col-9</div>
+            </div>
+            <div class="row">
+                <div class="col-10">.col-10</div>
+            </div>
+            <div class="row">
+                <div class="col-11">.col-11</div>
+            </div>
+            <div class="row">
+                <div class="col-12">.col-12</div>
+            </div>
+        </div>
+
+
+        <div class="code-desc">
+            Offset a column <code>.col-o-0 ~ .col-o-12</code>
+        </div>
+        <div class="rows">
+            <div class="row">
+                <div class="col-o-0 col-12">.col-o-0</div>
+            </div>
+            <div class="row">
+                <div class="col-o-1 col-11">.col-o-1</div>
+            </div>
+            <div class="row">
+                <div class="col-o-2 col-10">.col-o-2</div>
+            </div>
+            <div class="row">
+                <div class="col-o-3 col-9">.col-o-3</div>
+            </div>
+            <div class="row">
+                <div class="col-o-4 col-8">.col-o-4</div>
+            </div>
+            <div class="row">
+                <div class="col-o-5 col-7">.col-o-5</div>
+            </div>
+            <div class="row">
+                <div class="col-o-6 col-6">.col-o-6</div>
+            </div>
+            <div class="row">
+                <div class="col-o-7 col-5">.col-o-7</div>
+            </div>
+            <div class="row">
+                <div class="col-o-8 col-4">.col-o-8</div>
+            </div>
+            <div class="row">
+                <div class="col-o-9 col-3">.col-o-9</div>
+            </div>
+            <div class="row">
+                <div class="col-o-10 col-2">.col-o-10</div>
+            </div>
+            <div class="row">
+                <div class="col-o-11 col-1">.col-o-11</div>
+            </div>
+        </div>
+
+
+        <div class="code-desc">
+            grids inside grids inside grids
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-4">.col-4</div>
+                    <div class="col-8">.clo-8</div>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-7">.col-7</div>
+                    <div class="col-5">.clo-5</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

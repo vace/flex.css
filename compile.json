@@ -1,0 +1,13 @@
+{
+    "use": ["autoprefixer"],
+    "local-plugins": true,
+    "autoprefixer": {
+        "browsers": ["last 5 versions"],
+        "cascade": true,
+        "remove": true,
+        "prefixOnSave": false
+    },
+    "postcss-cachify": {
+        "baseUrl": "/res"
+    }
+}
